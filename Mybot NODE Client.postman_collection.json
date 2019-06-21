@@ -1,0 +1,176 @@
+{
+	"id": "fb62d286-3d80-45f3-af0a-5130bc7ef51a",
+	"name": "Mybot NODE Client",
+	"description": null,
+	"auth": null,
+	"events": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "0df4997c-31dd-446f-9efa-9d6ff582c617",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "62fafdd4-bb9c-442b-a2f3-0f56e9a1d7a4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variables": null,
+	"order": [
+		"287e31c5-04a8-4c3c-97cf-951e45b6209d",
+		"7c24afa6-2288-46a2-9014-a899b5b143e5",
+		"d1c26cf8-92ca-4cf7-b98c-caf58800e27f",
+		"6bbebf92-3481-4d4c-b2a3-09f4e7bc4932"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "287e31c5-04a8-4c3c-97cf-951e45b6209d",
+			"name": "step 0: welcome event",
+			"url": "localhost:3000/send",
+			"description": null,
+			"data": [
+				{
+					"key": "event",
+					"value": "WELCOME",
+					"type": "text"
+				},
+				{
+					"key": "text",
+					"value": "test test",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "6bbebf92-3481-4d4c-b2a3-09f4e7bc4932",
+			"name": "step 3: get room",
+			"url": "localhost:3000/send",
+			"description": null,
+			"data": [
+				{
+					"key": "text",
+					"value": "1",
+					"type": "text"
+				},
+				{
+					"key": "context_id",
+					"value": "get_room",
+					"type": "text"
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "7c24afa6-2288-46a2-9014-a899b5b143e5",
+			"name": "step 1: get name",
+			"url": "localhost:3000/send",
+			"description": null,
+			"data": [
+				{
+					"key": "text",
+					"value": "James Bond",
+					"type": "text"
+				},
+				{
+					"key": "context_id",
+					"value": "get_name",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "d1c26cf8-92ca-4cf7-b98c-caf58800e27f",
+			"name": "step 2: get date",
+			"url": "localhost:3000/send",
+			"description": null,
+			"data": [
+				{
+					"key": "text",
+					"value": "12.12.2019",
+					"type": "text"
+				},
+				{
+					"key": "context_id",
+					"value": "get_date",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		}
+	]
+}
